@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">first work</string>
+    <string name="user">用户名:</string>
+    <string name="password">密 码:</string>
+    <string name="sex">性 别:</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="submit">提交</string>
+</resources>
