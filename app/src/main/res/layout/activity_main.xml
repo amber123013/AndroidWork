@@ -4,10 +4,10 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:orientation="vertical"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.asus.firstwork.MainActivity">
 
@@ -15,46 +15,89 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="6dp"
+            android:layout_marginRight="10dp"
             android:text="@string/user" />
+
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="11dp"
-            />
+            android:hint="必填，默认用户名"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="10dp"
             android:text="@string/password" />
+
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="11dp"
-            android:inputType="textPassword"
+            android:hint="必填，默认密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="地 址:" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="可选"
             />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sex"
             android:layout_marginRight="10dp"
-            android:layout_gravity="center"/>
+            android:text="学 校:" />
+
+        <EditText
+            android:id="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="可选"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/sex" />
+
         <RadioGroup
             android:id="@+id/iRadio"
             android:layout_width="match_parent"
@@ -62,22 +105,24 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/radioMan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/man"
-                android:id="@+id/radioMan" />
+                android:checked="true"
+                android:text="@string/man" />
 
             <RadioButton
+                android:id="@+id/radioWoman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/woman"
-                android:id="@+id/radioWoman"/>
+                android:text="@string/woman" />
         </RadioGroup>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal">
+
         <Button
             android:id="@+id/submit"
             android:layout_width="wrap_content"
@@ -85,5 +130,4 @@
             android:layout_marginTop="20dp"
             android:text="@string/submit" />
     </LinearLayout>
-
 </LinearLayout>
